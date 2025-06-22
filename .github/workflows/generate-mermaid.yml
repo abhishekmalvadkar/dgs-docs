@@ -5,6 +5,7 @@ on:
     branches: [develop]
     paths:
       - 'diagrams/*.mmd'
+  workflow_dispatch:
 
 jobs:
   generate-mermaid:
