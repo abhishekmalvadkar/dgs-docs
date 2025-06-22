@@ -6,6 +6,6 @@ Built using [Mermaid.js](https://mermaid.js.org) and auto-rendered into SVG usin
 
 ## Glossary Context Diagarm
 
-![Glossary Context Diagarm](assets/dgs-context-diagram.svg)
+![Glossary Context Diagarm](assets/dgs-context-diagram.png)
 
 
