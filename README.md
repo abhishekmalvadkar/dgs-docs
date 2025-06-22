@@ -8,4 +8,8 @@ Built using [Mermaid.js](https://mermaid.js.org) and auto-rendered into SVG usin
 
 ![Glossary Context Diagarm](assets/dgs-context-diagram.png)
 
+## Glossary Container Diagarm
+
+![Glossary Container Diagarm](assets/dgs-container-diagram.png)
+
 
