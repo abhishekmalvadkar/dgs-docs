@@ -26,7 +26,7 @@ jobs:
             filename=$(basename "$file" .mmd)
             echo "Rendering $file to assets/${filename}.png"
             docker run --rm -v "$PWD:/data" minlag/mermaid-cli \
-              -i "/data/$file" -o "/data/assets/${filename}.png" --png
+              -i "/data/$file" -o "/data/assets/${filename}.png"
           done
 
       - name: Commit and push PNG diagrams
