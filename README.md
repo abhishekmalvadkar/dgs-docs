@@ -13,3 +13,8 @@ Built using [Mermaid.js](https://mermaid.js.org) and auto-rendered into SVG usin
 ![Glossary Container Diagarm](assets/dgs-container-diagram.png)
 
 
+## Glossary Backend Container Diagarm
+
+![Glossary Backend Container Diagarm](assets/dgs-backend-container-diagram.png)
+
+
