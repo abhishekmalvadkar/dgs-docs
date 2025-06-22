@@ -1,0 +1,12 @@
+erDiagram
+    USERS ||--o{ ORDERS : places
+    USERS {
+        id bigint PK
+        name varchar(45)
+        string email
+    }
+    ORDERS {
+        int id PK
+        int user_id FK
+        date order_date
+    }
