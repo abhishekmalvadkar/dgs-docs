@@ -7,6 +7,8 @@ on:
       - 'diagrams/*.mmd'
 
   workflow_dispatch:  # allow manual run
+permissions:
+  contents: write  # ✅ Allow push using GITHUB_TOKEN
 
 jobs:
   render-diagrams:
