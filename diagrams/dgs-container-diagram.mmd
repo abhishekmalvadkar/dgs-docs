@@ -1,0 +1,30 @@
+    C4Container
+    title Container diagram for Domain Glossary System
+
+    System_Ext(google_auth_server, "Google Auth Server", "Responsible to authenticate users <br/> using sign with google")
+    Person(manager, "Manager", "A user who is going to resposnible <br/> to manage organization, <br/> projects, members,term")        
+    Person(member, "Member", "A user who is belongs to <br/> one or many projects <br/> and know project doamin using terms")
+    System_Ext(fcs_blob_storage, "Firebase Clound Storage", "Responsible to store binary files <br/> like images, pdf, videos, audios etc..")
+
+
+    Container_Boundary(c1, "Domain Glossary System") {
+        Container(spa, "Single Page App", "Angular", "Provides all the domain glossary management <br/> functionality to users via <br/>their web browser")
+        Container(dgs_backend_system, "Backend", "Java, Spring Boot", "Microservice aarchitecture based backend")
+        ContainerDb(dgs_db, "Database", "MySQL Database", "Stores dgs related data to database")
+    }
+
+    Rel(manager, spa, "Uses", "HTTPS")
+    Rel(member, spa, "Uses", "HTTPS")
+
+    Rel(spa, google_auth_server, "Uses")
+    Rel(spa, fcs_blob_storage, "Uses")
+
+    Rel(dgs_backend_system, google_auth_server, "Uses")
+    Rel(dgs_backend_system, fcs_blob_storage, "Uses")
+
+    BiRel(spa, dgs_backend_system, "Uses")
+    BiRel(dgs_backend_system, dgs_db, "Uses")
+    
+
+    UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")
+    
