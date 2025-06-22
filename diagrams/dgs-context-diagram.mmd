@@ -1,0 +1,14 @@
+C4Context
+    title Context diagram for Domain Glossary System
+    Boundary(dgsBoundary, "Domain Glossay System Boundary") {
+        Person(manager, "Manager", "A user who is going to resposnible <br/> to manage organization, <br/> projects, members,term")        
+        Person(member, "Member", "A user who is belongs to <br/> one or many projects <br/> and know project doamin using terms")
+
+        System(doaminGlossarySystem, "Domain Glossary System", "Allows managers to manager <br/> glossary of doamin")        
+        
+    }
+
+    Rel(manager, doaminGlossarySystem, "Uses")
+    Rel(member, doaminGlossarySystem, "Uses")
+
+UpdateLayoutConfig($c4ShapeInRow="2", $c4BoundaryInRow="1")
