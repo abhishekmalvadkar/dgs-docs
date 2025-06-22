@@ -1,41 +1,38 @@
-name: Generate Mermaid SVGs
+name: Render Mermaid Diagrams as PNG
 
 on:
   push:
     branches: [develop]
     paths:
       - 'diagrams/*.mmd'
-  workflow_dispatch:
+
+  workflow_dispatch:  # allow manual run
 
 jobs:
-  generate-mermaid:
-    if: "!contains(github.event.head_commit.message, 'Auto-generate SVGs from Mermaid')"
+  render-diagrams:
+    if: "!contains(github.event.head_commit.message, 'Auto-generate PNG diagrams from Mermaid')"
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
+      - name: Create output directory
+        run: mkdir -p assets
 
-      - name: Install Mermaid CLI
-        run: npm install -g @mermaid-js/mermaid-cli
-
-      - name: Generate SVGs from .mmd files
+      - name: Render all Mermaid .mmd files to PNG using Docker
         run: |
-          mkdir -p assets
           for file in diagrams/*.mmd; do
             filename=$(basename "$file" .mmd)
-            mmdc -i "$file" -o "assets/${filename}.svg"
+            echo "Rendering $file to assets/${filename}.png"
+            docker run --rm -v "$PWD:/data" minlag/mermaid-cli \
+              -i "/data/$file" -o "/data/assets/${filename}.png" --png
           done
 
-      - name: Commit and push generated SVGs
+      - name: Commit and push PNG diagrams
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add assets/*.svg
-          git diff --cached --quiet || git commit -m "Auto-generate SVGs from Mermaid"
+          git add assets/*.png
+          git diff --cached --quiet || git commit -m "Auto-generate PNG diagrams from Mermaid"
           git push
