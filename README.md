@@ -12,6 +12,10 @@
 
 [Domain Stories](https://github.com/abhishekmalvadkar/dgs-docs/blob/develop/stories.md)
 
+### Event Storming MVP 1
+
+[Event Storming MVP 1](https://excalidraw.com/#json=zKLFmkZ1Yjsjm51Ko6Miy,bj3Vk-Y7kQfeXg_JR4u4NQ)
+
 
 
 
