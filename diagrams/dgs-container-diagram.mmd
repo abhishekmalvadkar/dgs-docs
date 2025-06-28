@@ -2,8 +2,9 @@
     title Container diagram for Domain Glossary System
 
     System_Ext(google_auth_server, "Google Auth Server", "Responsible to authenticate users <br/> using sign with google")
-    Person(manager, "Manager", "A user who is going to resposnible <br/> to manage organization, <br/> projects, members,term")        
-    Person(member, "Member", "A user who is belongs to <br/> one or many projects <br/> and know project doamin using terms")
+    Person(admin, "Admin", "A user who is going to resposnible <br/> to manage organizations, <br/> users and other everything")
+    Person(managers, "Managers", "A user who is going to resposnible <br/> to manage projects, <br/> contexts,terms and project assignment")        
+    Person(members, "Members", "A user who is belongs to <br/> one or many projects <br/> and know project doamin using context and terms")
     System_Ext(fcs_blob_storage, "Firebase Clound Storage", "Responsible to store binary files <br/> like images, pdf, videos, audios etc..")
 
 
@@ -13,8 +14,9 @@
         ContainerDb(dgs_db, "Database", "MySQL Database", "Stores dgs related data to database")
     }
 
-    Rel(manager, spa, "Uses", "HTTPS")
-    Rel(member, spa, "Uses", "HTTPS")
+    Rel(admin, spa, "Uses", "HTTPS")
+    Rel(managers, spa, "Uses", "HTTPS")
+    Rel(members, spa, "Uses", "HTTPS")
 
     Rel(spa, google_auth_server, "Uses")
     Rel(spa, fcs_blob_storage, "Uses")
