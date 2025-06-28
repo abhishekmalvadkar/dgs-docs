@@ -4,7 +4,7 @@
 
 [Project Purpose](https://github.com/abhishekmalvadkar/dgs-docs/blob/develop/project-purpose.md)
 
-### Diagrams for the Domain Glossary System (DGS), using Mermaid.
+### C4 Model Diagrams for the Domain Glossary System (DGS), using Mermaid.
 
 [Context Diagarm](https://github.com/abhishekmalvadkar/dgs-docs/blob/develop/diagrams/dgs-context-diagram.mmd)
 
