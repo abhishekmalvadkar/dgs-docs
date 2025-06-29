@@ -39,8 +39,8 @@ nav:
   - Home: index.md
   - Project Purpose: project-purpose.md
   - C4 Diagrams:
-      - Context Diagram: diagrams/dgs-context-diagram.mmd
-      - Container Diagram: diagrams/dgs-container-diagram.mmd
-      - Backend Container Diagram: diagrams/dgs-backend-container-diagram.mmd
+      - Context Diagram: diagrams/dgs-context-diagram.md
+      - Container Diagram: diagrams/dgs-container-diagram.md
+      - Backend Container Diagram: diagrams/dgs-backend-container-diagram.md
   - Domain Stories: stories.md
   - Event Storming MVP 1: event-storming-mvp1.md
