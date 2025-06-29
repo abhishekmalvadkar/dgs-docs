@@ -39,8 +39,7 @@ nav:
   - Home: index.md
   - Project Purpose: project-purpose.md
   - C4 Diagrams:
-      # - Context Diagram: diagrams/dgs-context-diagram.mmd
-      - Context Diagram: diagrams/context-diagram.md
+      - Context Diagram: diagrams/dgs-context-diagram.mmd
       - Container Diagram: diagrams/dgs-container-diagram.mmd
       - Backend Container Diagram: diagrams/dgs-backend-container-diagram.mmd
   - Domain Stories: stories.md
