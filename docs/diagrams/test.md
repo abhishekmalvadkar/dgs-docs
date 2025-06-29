@@ -16,7 +16,7 @@ To view the ER diagram correctly, follow these steps:
 
 ## 📋 Diagram Code (copy this)
 
-````mermaid
+```mermaid
 erDiagram
     USERS ||--o{ ORDERS : places
     USERS {
