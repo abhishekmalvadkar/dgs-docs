@@ -21,6 +21,9 @@ theme:
     repo: fontawesome/brands/github
 
 markdown_extensions:
+  - pymdownx.extra:
+      auto_external_links: true
+      auto_external_link_new_tab: true
   - admonition
   - toc:
       permalink: true
