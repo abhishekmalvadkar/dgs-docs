@@ -1,0 +1,44 @@
+site_name: DGS Docs
+site_description: Documentation for Domain Glossary System
+site_author: Abhishek Malvadkar
+repo_url: https://github.com/abhishekmalvadkar/dgs-docs
+repo_name: abhishekmalvadkar/dgs-docs
+edit_uri: edit/develop/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    primary: blue
+    accent: light blue
+  icon:
+    repo: fontawesome/brands/github
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - codehilite
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.emoji
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Project Purpose: project-purpose.md
+  - C4 Diagrams:
+      - Context Diagram: diagrams/dgs-context-diagram.mmd
+      - Container Diagram: diagrams/dgs-container-diagram.mmd
+      - Backend Container Diagram: diagrams/dgs-backend-container-diagram.mmd
+  - Domain Stories: stories.md
+  - Event Storming MVP 1: event-storming-mvp1.md
