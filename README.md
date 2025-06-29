@@ -1,25 +1,84 @@
-## DGS Docs
+# DGS Docs
 
-### Project Purpose
+📚 This repository contains the documentation for the **Domain Glossary System (DGS)**.
 
-[Project Purpose](https://github.com/abhishekmalvadkar/dgs-docs/blob/develop/project-purpose.md)
+---
 
-### C4 Model Diagrams for the Domain Glossary System (DGS), using Mermaid.
+## 🔗 Live Documentation
 
-[Context Diagarm](https://github.com/abhishekmalvadkar/dgs-docs/blob/develop/diagrams/dgs-context-diagram.mmd)
+Visit the full documentation site here:
 
-[Container Diagarm](https://github.com/abhishekmalvadkar/dgs-docs/blob/develop/diagrams/dgs-container-diagram.mmd)
+👉 [https://abhishekmalvadkar.github.io/dgs-docs](https://abhishekmalvadkar.github.io/dgs-docs)
 
-[Backend Container Diagarm](https://github.com/abhishekmalvadkar/dgs-docs/blob/develop/diagrams/dgs-backend-container-diagram.mmd)
+---
 
-### Domain Stories
+## 📁 Project Structure
 
-[Domain Stories](https://github.com/abhishekmalvadkar/dgs-docs/blob/develop/stories.md)
+```
+dgs-docs/
+├── docs/                  # All Markdown files for documentation
+│   ├── index.md
+│   ├── project-purpose.md
+│   ├── diagrams/
+│   │   ├── context-diagram.md
+│   │   ├── backend-container-diagram.md
+│   │   └── ...
+│   ├── stories.md
+│   └── event-storming-mvp1.md
+├── mkdocs.yml             # MkDocs configuration file
+└── .github/
+    └── workflows/         # GitHub Actions for deployment
+```
 
-### Event Storming MVP 1
+---
 
-[Event Storming MVP 1](https://excalidraw.com/#json=zKLFmkZ1Yjsjm51Ko6Miy,bj3Vk-Y7kQfeXg_JR4u4NQ)
+## 🚀 Getting Started (Local Development)
 
+To run and preview the docs locally:
 
+1. Make sure Python is installed
 
+2. Install MkDocs and required plugins:
+
+   ```bash
+   pip install mkdocs-material mkdocs-mermaid2-plugin
+   ```
+
+3. Serve the documentation site:
+
+   ```bash
+   mkdocs serve
+   ```
+
+Then visit: [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
+## 🛠️ Built With
+
+* [MkDocs](https://www.mkdocs.org/) – Static site generator for project docs
+* [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) – Beautiful and responsive UI theme
+* [Mermaid](https://mermaid.js.org/) – Diagrams-as-code for architecture and flows
+* [Excalidraw](https://excalidraw.com/) – Visual event storming and collaborative modeling
+
+---
+
+## ✍️ Contributing
+
+Want to help improve the documentation?
+
+1. Fork this repository
+2. Create a new branch: `git checkout -b feature/my-update`
+3. Make your changes and commit them
+4. Push to your fork: `git push origin feature/my-update`
+5. Submit a pull request
+
+✅ All contributions are welcome and appreciated!
+
+---
+
+## 👤 Maintainer
+
+**Abhishek Malvadkar**
+GitHub: [@abhishekmalvadkar](https://github.com/abhishekmalvadkar)
 
