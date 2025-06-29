@@ -52,6 +52,4 @@ To view the ER diagram correctly, follow these steps:
 
 
     UpdateLayoutConfig($c4ShapeInRow="4", $c4BoundaryInRow="1")
-    
-
 ```
