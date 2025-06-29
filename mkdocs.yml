@@ -4,6 +4,7 @@ site_author: Abhishek Malvadkar
 repo_url: https://github.com/abhishekmalvadkar/dgs-docs
 repo_name: abhishekmalvadkar/dgs-docs
 edit_uri: edit/develop/
+docs_dir: .
 
 theme:
   name: material
