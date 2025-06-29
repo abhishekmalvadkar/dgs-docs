@@ -13,6 +13,7 @@ This site documents the **Domain Glossary System (DGS)** with a focus on:
 - [Context Diagram](diagrams/dgs-context-diagram.mmd)
 - [Container Diagram](diagrams/dgs-container-diagram.mmd)
 - [Backend Container Diagram](diagrams/dgs-backend-container-diagram.mmd)
+- [Database Design](diagrams/test.md)
 
 ## Domain Stories
 
