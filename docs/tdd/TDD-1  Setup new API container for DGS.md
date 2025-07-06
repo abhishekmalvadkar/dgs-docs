@@ -33,7 +33,7 @@ it will have our all functionalities of DGS system.
   * Testcontainers
 * Generate and unzip
 * Open in IntelliJ
-* Create git repositories
+* Create git repository
 * Share project on GitHub in public mode
 * Mark GitHub ticket [GH-5](https://github.com/abhishekmalvadkar/dgs-docs/issues/5) as DONE
 
